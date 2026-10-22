@@ -1,0 +1,158 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Length 1944 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+13 TL
+/F2 15 Tf
+(C++ Quick Reference and Debugging Examples) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Vectors and bounds) Tj
+T*
+/F1 10 Tf
+(#include <vector>) Tj
+T*
+/F1 10 Tf
+(std::vector<int> values{10, 20, 30};) Tj
+T*
+/F1 10 Tf
+(for \(std::size_t i = 0; i < values.size\(\); ++i\) {) Tj
+T*
+/F1 10 Tf
+(    std::cout << values[i] << '\\n';) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Valid vector indexes are 0 through size\(\) - 1. Use i < values.size\(\), not <=. at\(i\)) Tj
+T*
+/F1 10 Tf
+(    performs bounds checking and throws std::out_of_range when invalid.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Range-based loops) Tj
+T*
+/F1 10 Tf
+(for \(int value : values\) {) Tj
+T*
+/F1 10 Tf
+(    std::cout << value << '\\n';) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(A range-based for loop avoids manual index errors when the index is not needed. Use) Tj
+T*
+/F1 10 Tf
+(    const auto& value to avoid copying larger elements.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Sorting) Tj
+T*
+/F1 10 Tf
+(#include <algorithm>) Tj
+T*
+/F1 10 Tf
+(std::sort\(values.begin\(\), values.end\(\)\);) Tj
+T*
+/F1 10 Tf
+(std::sort rearranges the range in place and returns void. Do not assign its result back) Tj
+T*
+/F1 10 Tf
+(    to the vector.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(References and pointers) Tj
+T*
+/F1 10 Tf
+(int value = 7;) Tj
+T*
+/F1 10 Tf
+(int& ref = value;) Tj
+T*
+/F1 10 Tf
+(int* ptr = &value;) Tj
+T*
+/F1 10 Tf
+(A reference must be initialized and cannot be reseated. A pointer can be null; check it) Tj
+T*
+/F1 10 Tf
+(    before dereferencing.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Functions and const) Tj
+T*
+/F1 10 Tf
+(int sum\(const std::vector<int>& values\) {) Tj
+T*
+/F1 10 Tf
+(    int total = 0;) Tj
+T*
+/F1 10 Tf
+(    for \(int value : values\) total += value;) Tj
+T*
+/F1 10 Tf
+(    return total;) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Passing a vector by const reference avoids a copy and prevents accidental modification.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000189 00000 n 
+0000000262 00000 n 
+0000002258 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2394
+%%EOF

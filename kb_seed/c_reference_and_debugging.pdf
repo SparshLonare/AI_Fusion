@@ -1,0 +1,182 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Length 2124 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+13 TL
+/F2 15 Tf
+(C Quick Reference and Debugging Examples) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Basic types and output) Tj
+T*
+/F1 10 Tf
+(#include <stdio.h>) Tj
+T*
+/F1 10 Tf
+(int main\(void\) {) Tj
+T*
+/F1 10 Tf
+(    int count = 3;) Tj
+T*
+/F1 10 Tf
+(    printf\("%d\\n", count\);) Tj
+T*
+/F1 10 Tf
+(    return 0;) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Use the matching printf format specifier. %d prints an int; %f prints a floating-point) Tj
+T*
+/F1 10 Tf
+(    value.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Array bounds) Tj
+T*
+/F1 10 Tf
+(int values[] = {10, 20, 30};) Tj
+T*
+/F1 10 Tf
+(int length = 3;) Tj
+T*
+/F1 10 Tf
+(for \(int i = 0; i < length; i++\) {) Tj
+T*
+/F1 10 Tf
+(    printf\("%d\\n", values[i]\);) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(C arrays are zero-indexed. The valid indexes here are 0, 1, and 2. A condition i <=) Tj
+T*
+/F1 10 Tf
+(    length accesses beyond the array and causes undefined behavior.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Pointers) Tj
+T*
+/F1 10 Tf
+(int value = 7;) Tj
+T*
+/F1 10 Tf
+(int *ptr = &value;) Tj
+T*
+/F1 10 Tf
+(if \(ptr != NULL\) {) Tj
+T*
+/F1 10 Tf
+(    printf\("%d\\n", *ptr\);) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(A pointer must refer to a valid object before dereferencing. Dereferencing NULL or an) Tj
+T*
+/F1 10 Tf
+(    uninitialized pointer has undefined behavior.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Strings) Tj
+T*
+/F1 10 Tf
+(#include <string.h>) Tj
+T*
+/F1 10 Tf
+(char text[16] = "hello";) Tj
+T*
+/F1 10 Tf
+(size_t n = strlen\(text\);) Tj
+T*
+/F1 10 Tf
+(Strings in C are character arrays terminated by '\\0'. Reserve space for the terminator) Tj
+T*
+/F1 10 Tf
+(    and avoid writing beyond the array.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Dynamic allocation) Tj
+T*
+/F1 10 Tf
+(#include <stdlib.h>) Tj
+T*
+/F1 10 Tf
+(int *items = malloc\(3 * sizeof *items\);) Tj
+T*
+/F1 10 Tf
+(if \(items != NULL\) {) Tj
+T*
+/F1 10 Tf
+(    items[0] = 42;) Tj
+T*
+/F1 10 Tf
+(    free\(items\);) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Check allocation results and release allocated memory with free exactly once when it is) Tj
+T*
+/F1 10 Tf
+(    no longer needed.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000189 00000 n 
+0000000262 00000 n 
+0000002438 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2574
+%%EOF

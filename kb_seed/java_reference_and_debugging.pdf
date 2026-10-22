@@ -1,0 +1,164 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Length 1893 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+13 TL
+/F2 15 Tf
+(Java Quick Reference and Debugging Examples) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Variables and types) Tj
+T*
+/F1 10 Tf
+(int count = 3;) Tj
+T*
+/F1 10 Tf
+(String name = "Ada";) Tj
+T*
+/F1 10 Tf
+(boolean ready = true;) Tj
+T*
+/F1 10 Tf
+(Use a type that matches the value; Java does not implicitly convert arbitrary strings) Tj
+T*
+/F1 10 Tf
+(    to numbers.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Arrays and indexing) Tj
+T*
+/F1 10 Tf
+(int[] values = {10, 20, 30};) Tj
+T*
+/F1 10 Tf
+(for \(int i = 0; i < values.length; i++\) {) Tj
+T*
+/F1 10 Tf
+(    System.out.println\(values[i]\);) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Indexes range from 0 through length - 1. Using i <= values.length reads past the final) Tj
+T*
+/F1 10 Tf
+(    element and throws ArrayIndexOutOfBoundsException.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Null values) Tj
+T*
+/F1 10 Tf
+(String label = null;) Tj
+T*
+/F1 10 Tf
+(if \(label != null\) {) Tj
+T*
+/F1 10 Tf
+(    System.out.println\(label.length\(\)\);) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Calling a method on null throws NullPointerException. Check for null or use a value) Tj
+T*
+/F1 10 Tf
+(    that cannot be null.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Collections) Tj
+T*
+/F1 10 Tf
+(List<String> names = new ArrayList<>\(\);) Tj
+T*
+/F1 10 Tf
+(names.add\("Mina"\);) Tj
+T*
+/F1 10 Tf
+(for \(String name : names\) {) Tj
+T*
+/F1 10 Tf
+(    System.out.println\(name\);) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(Use the enhanced for loop when an index is not needed. Import java.util.List and) Tj
+T*
+/F1 10 Tf
+(    java.util.ArrayList.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Methods) Tj
+T*
+/F1 10 Tf
+(static int add\(int a, int b\) {) Tj
+T*
+/F1 10 Tf
+(    return a + b;) Tj
+T*
+/F1 10 Tf
+(}) Tj
+T*
+/F1 10 Tf
+(A non-void method must return a value on every path. A missing return causes a) Tj
+T*
+/F1 10 Tf
+(    compile-time error.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000189 00000 n 
+0000000262 00000 n 
+0000002207 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2343
+%%EOF

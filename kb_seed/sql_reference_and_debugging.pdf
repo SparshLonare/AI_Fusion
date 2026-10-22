@@ -1,0 +1,179 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Length 2223 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+13 TL
+/F2 15 Tf
+(SQL Quick Reference and Query Debugging) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Filtering and ordering) Tj
+T*
+/F1 10 Tf
+(SELECT name, score) Tj
+T*
+/F1 10 Tf
+(FROM students) Tj
+T*
+/F1 10 Tf
+(WHERE score >= 70) Tj
+T*
+/F1 10 Tf
+(ORDER BY score DESC;) Tj
+T*
+/F1 10 Tf
+(WHERE filters individual rows before grouping. ORDER BY controls result ordering;) Tj
+T*
+/F1 10 Tf
+(    without it, row order is not guaranteed.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Aggregates and HAVING) Tj
+T*
+/F1 10 Tf
+(SELECT department, COUNT\(*\) AS total) Tj
+T*
+/F1 10 Tf
+(FROM employees) Tj
+T*
+/F1 10 Tf
+(GROUP BY department) Tj
+T*
+/F1 10 Tf
+(HAVING COUNT\(*\) > 5;) Tj
+T*
+/F1 10 Tf
+(Use WHERE to filter rows before aggregation and HAVING to filter grouped results. An) Tj
+T*
+/F1 10 Tf
+(    aggregate such as COUNT\(*\) generally belongs in HAVING, not WHERE.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(NULL handling) Tj
+T*
+/F1 10 Tf
+(SELECT name) Tj
+T*
+/F1 10 Tf
+(FROM customers) Tj
+T*
+/F1 10 Tf
+(WHERE email IS NULL;) Tj
+T*
+/F1 10 Tf
+(NULL means unknown or missing. Use IS NULL or IS NOT NULL; comparisons like email =) Tj
+T*
+/F1 10 Tf
+(    NULL do not match NULL values.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Joins) Tj
+T*
+/F1 10 Tf
+(SELECT c.name, o.total) Tj
+T*
+/F1 10 Tf
+(FROM customers AS c) Tj
+T*
+/F1 10 Tf
+(JOIN orders AS o ON o.customer_id = c.id;) Tj
+T*
+/F1 10 Tf
+(An inner JOIN returns matching rows. A missing or incorrect join condition can multiply) Tj
+T*
+/F1 10 Tf
+(    rows or produce a Cartesian product.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Parameterized values) Tj
+T*
+/F1 10 Tf
+(SELECT id, name) Tj
+T*
+/F1 10 Tf
+(FROM users) Tj
+T*
+/F1 10 Tf
+(WHERE email = ?;) Tj
+T*
+/F1 10 Tf
+(Bind values through the database driver's parameter mechanism. Do not concatenate) Tj
+T*
+/F1 10 Tf
+(    untrusted input into SQL text; parameters help prevent SQL injection.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+/F1 10 Tf
+(Updates and deletes) Tj
+T*
+/F1 10 Tf
+(UPDATE inventory) Tj
+T*
+/F1 10 Tf
+(SET quantity = quantity - 1) Tj
+T*
+/F1 10 Tf
+(WHERE item_id = ?;) Tj
+T*
+/F1 10 Tf
+(Check the WHERE condition before UPDATE or DELETE. Omitting it can change or remove) Tj
+T*
+/F1 10 Tf
+(    every row in the table.) Tj
+T*
+/F1 10 Tf
+() Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000189 00000 n 
+0000000262 00000 n 
+0000002537 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2673
+%%EOF
