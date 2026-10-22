@@ -1,0 +1,1 @@
+"""codehelper Django project package."""

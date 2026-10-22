@@ -1,0 +1,19 @@
+# Project: AI Code Explainer & Debugging Assistant (RAG)
+
+Django web app. User pastes code plus a problem description. The app
+retrieves relevant passages from a knowledge base of PDF/TXT docs, then
+Gemini explains the code, lists issues, and suggests corrected code.
+Never execute user code.
+
+## Stack
+Python, Django, ChromaDB (persistent in ./chroma_db), google-genai,
+pypdf, Bootstrap 5, vanilla JS.
+
+## Rules
+- Project root is the folder containing manage.py. Seed docs live in
+  <root>/kb_seed (use settings.BASE_DIR).
+- GEMINI_API_KEY comes from an env var only.
+- All RAG logic lives in core/rag.py. Views stay thin.
+- If retrieval finds nothing relevant, say so clearly in the UI.
+- Show retrieved chunks (source, page, score) before the AI answer.
+- After each task, run `python manage.py check` and fix errors.
