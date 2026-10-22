@@ -2,13 +2,17 @@ import json
 import logging
 import os
 import time
+from pathlib import Path
 import chromadb
 from google import genai
 from google.genai import types
 from pypdf import PdfReader
 
 _client = None
-col = chromadb.PersistentClient(path="chroma_db").get_or_create_collection(
+CHROMA_DB_PATH = os.environ.get(
+    "CHROMA_DB_PATH", str(Path(__file__).resolve().parent.parent / "chroma_db")
+)
+col = chromadb.PersistentClient(path=CHROMA_DB_PATH).get_or_create_collection(
     "docs", metadata={"hnsw:space": "cosine"})
 
 EMBED_MODEL = "gemini-embedding-001"
