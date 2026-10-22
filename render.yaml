@@ -2,16 +2,12 @@ services:
   - type: web
     name: codehelper
     runtime: python
-    plan: starter
+    plan: free
     buildCommand: >-
       pip install -r requirements.txt &&
-      DJANGO_DATA_DIR=/tmp CHROMA_DB_PATH=/tmp/chroma_db
+      python manage.py seed_kb &&
       python manage.py collectstatic --noinput
     startCommand: python manage.py migrate && python -m gunicorn codehelper.wsgi:application --bind 0.0.0.0:$PORT
-    disk:
-      name: codehelper-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: DEBUG
         value: "false"
@@ -19,7 +15,3 @@ services:
         generateValue: true
       - key: GEMINI_API_KEY
         sync: false
-      - key: DJANGO_DATA_DIR
-        value: /var/data
-      - key: CHROMA_DB_PATH
-        value: /var/data/chroma_db
